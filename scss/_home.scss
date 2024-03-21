@@ -2,22 +2,213 @@
   background: $silver;
   padding-top: 18rem;
   padding-bottom: 9.6rem;
-  .container{
+  .container {
     @include flex(row, center, space-between);
-    .text{
+    .swiper-slide {
+      display: flex;
+    }
+    .text {
+      width: 100%;
+      max-width: 65.7rem;
+      h1 {
+        span {
+          display: block;
+          color: $primary;
+          margin-bottom: 1.6rem;
+        }
+      }
+      p {
+        font-size: 1.6rem;
+        margin-bottom: 3.2rem;
+      }
+    }
+    .swiper-pagination {
+      position: relative;
+      .swiper-pagination-bullet {
+        transition: all 0.3s;
+        width: 0.862rem;
+        &.swiper-pagination-bullet-active {
+          opacity: 1;
+          width: 1.7rem;
+        }
+        &:not(:first-child) {
+          margin-left: 0.4rem;
+        }
+        background: $primary;
+        opacity: 0.3;
+        border-radius: 12px;
+      }
+    }
+  }
+}
+
+.s-clients {
+  padding: 4rem 0;
+  h2 {
+    text-align: center;
+    margin-bottom: 0.8rem;
+  }
+  p {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+  ul {
+    @include flex(row, center, space-between);
+    li {
+      background: rgba(76, 175, 79, 0.3);
+      padding: 10px;
+      border-radius: 10px;
+      transition: background 0.3s;
+      img {
+        width: 4rem;
+        height: 2.8rem;
+      }
+      &:hover {
+        background: $primary;
+      }
+    }
+  }
+}
+
+.s-manage {
+  padding: 4rem;
+  .title {
+    margin-bottom: 4rem;
+    h2 {
+      text-align: center;
+      width: 100%;
+      max-width: 54.2rem;
+      margin: 0 auto;
+      margin-bottom: 0.8rem;
+    }
+    p {
+      text-align: center;
+    }
+  }
+  ul {
+    @include flex(row, center, space-between);
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0px 2px 4px #e8f5e9;
+      padding: 2.4rem 2.9rem;
+      img {
+        margin-bottom: 1.6rem;
+      }
+      h3 {
+        max-width: 26.7rem;
+        text-align: center;
+        margin-bottom: 0.8rem;
+        color: $d_grey;
+      }
+      p {
+        max-width: 24rem;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.s-pixelgrade {
+  padding: 4rem 0;
+  .container {
+    @include flex(row, center, space-between);
+    .text {
+      width: 100%;
+      max-width: 66.1rem;
+      h2 {
         width: 100%;
-        max-width: 65.7rem;
-        h1{
-            span{
-                display: block;
-                color: $primary;
-                margin-bottom: 1.6rem;
-            }
+        max-width: 60rem;
+        margin-bottom: 0.8rem;
+      }
+      p {
+        margin-bottom: 3.2rem;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.s-business {
+  background: $silver;
+  padding: 6.4rem 0;
+  .container {
+    @include flex(row, center, space-between);
+    .text {
+      width: 100%;
+      max-width: 54rem;
+      h2 {
+        margin-bottom: 0.8rem;
+        span {
+          display: block;
+          color: $primary;
         }
-        p{
-            font-size: 1.6rem;
-            margin-bottom:3.2rem ;
+      }
+    }
+    .numbers {
+      width: 100%;
+      max-width: 54rem;
+      ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        li {
+          width: 25.5rem;
+          display: flex;
+          align-items: center;
+          .icon {
+            margin-right: 1.6rem;
+          }
+          h4 {
+            color: $d_grey;
+          }
+          span {
+            display: block;
+            color: $grey;
+          }
         }
+      }
+    }
+  }
+}
+
+.s-customers {
+  padding: 4rem;
+  .container {
+    @include flex(row, center, space-between);
+    .image {
+      width: 100%;
+      max-width: 32.6rem;
+    }
+    .text {
+      width: 100%;
+      max-width: 65.8rem;
+      p {
+        margin-bottom: 1.6rem;
+      }
+      h4 {
+        color: $primary;
+        margin-bottom: 0.8rem;
+      }
+      span {
+        display: block;
+        color: $l_grey;
+        margin-bottom: 3.2rem;
+      }
+      ul {
+        @include flex(row, center, space-between);
+        a {
+          display: flex;
+          align-items: center;
+          font-weight: bold;
+          color: $primary;
+          font-size: 1.4rem;
+          img {
+            margin-left: 0.8rem;
+          }
+        }
+      }
     }
   }
 }
