@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -12,7 +14,7 @@
     <title>Nex Center</title>
   </head>
   <body>
-    <header>
+    <header data-aos="fade-up">
       <div class="container">
         <div class="logo">
           <img src="img/Logo.svg" alt="" />
@@ -42,7 +44,7 @@
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div class="text">
+              <div class="text" data-aos="fade-right">
                 <h1>Lessons and insights <span>from 8 years</span></h1>
                 <p>
                   Where to grow your business as a photographer: site or social
@@ -51,7 +53,7 @@
                 <button class="btn-primary">Register</button>
               </div>
               <div class="image">
-                <img src="img/s-hero.svg" alt="" />
+                <img src="img/s-hero.svg" alt=""data-aos='fade-left' />
               </div>
             </div>
             <div class="swiper-slide">
@@ -88,16 +90,15 @@
 
     <section class="s-clients">
       <div class="container">
-        <h2>Our Clients</h2>
-        <p>We have been working with some Fortune 500+ clients</p>
+        
         <ul>
-          <li><img src="img/Logo-1.svg" alt="" /></li>
-          <li><img src="img/Logo-2.svg" alt="" /></li>
-          <li><img src="img/Logo-3.svg" alt="" /></li>
-          <li><img src="img/Logo-4.svg" alt="" /></li>
-          <li><img src="img/Logo-5.svg" alt="" /></li>
-          <li><img src="img/Logo-6.svg" alt="" /></li>
-          <li><img src="img/Logo-7.svg" alt="" /></li>
+          <li><img src="img/Logo-1.svg" alt="" data-aos="flip-left"/></li>
+          <li><img src="img/Logo-2.svg" alt="" data-aos="flip-left"/></li>
+          <li><img src="img/Logo-3.svg" alt="" data-aos="flip-left"/></li>
+          <li><img src="img/Logo-4.svg" alt="" data-aos="flip-left"/></li>
+          <li><img src="img/Logo-5.svg" alt="" data-aos="flip-left"/></li>
+          <li><img src="img/Logo-6.svg" alt="" data-aos="flip-left"/></li>
+          <li><img src="img/Logo-7.svg" alt="" data-aos="flip-left"/></li>
         </ul>
       </div>
     </section>
@@ -109,7 +110,7 @@
           <p>Who is Nextcent suitable for?</p>
         </div>
         <ul>
-          <li>
+          <li data-aos="fade-right">
             <div class="icon"><img src="./img/people.svg" alt="" /></div>
             <h3>
               Membership<br />
@@ -120,7 +121,7 @@
               membership renewals and payments
             </p>
           </li>
-          <li>
+          <li data-aos="fade-up">
             <div class="icon"><img src="./img/national.svg" alt="" /></div>
             <h3>
               National<br />
@@ -131,7 +132,7 @@
               membership renewals and payments
             </p>
           </li>
-          <li>
+          <li data-aos="fade-left">
             <div class="icon"><img src="./img/group.svg" alt="" /></div>
             <h3>
               Clubs And<br />
@@ -148,10 +149,10 @@
 
     <section class="s-pixelgrade">
       <div class="container">
-        <div class="image">
+        <div class="image" data-aos="fade-right">
           <img src="img/pana.svg" alt="" />
         </div>
-        <div class="text">
+        <div class="text" data-aos="fade-left">
           <h2>The unseen of spending three years at Pixelgrade</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
@@ -168,34 +169,34 @@
 
     <section class="s-business">
       <div class="container">
-        <div class="text">
+        <div class="text" data-aos="fade-up">
           <h2>Helping a local <span>business reinvent itself</span></h2>
           <p>We reached here with our hard work and dedication</p>
         </div>
         <div class="numbers">
           <ul>
-            <li>
+            <li data-aos="zoom-in">
               <div class="icon"><img src="img/user.svg" alt="" /></div>
               <div class="numbers-text">
                 <h4>2,245,341</h4>
                 <span>Members</span>
               </div>
             </li>
-            <li>
+            <li data-aos="zoom-in">
               <div class="icon"><img src="img/clubs.png" alt="" /></div>
               <div class="numbers-text">
                 <h4>46,328</h4>
                 <span>Clubs</span>
               </div>
-            </li>
-            <li>
+            </li >
+            <li data-aos="zoom-in">
               <div class="icon"><img src="img/booking.svg" alt="" /></div>
               <div class="numbers-text">
                 <h4>828,867</h4>
                 <span>Event Bookings</span>
               </div>
             </li>
-            <li>
+            <li data-aos="zoom-in">
               <div class="icon"><img src="img/payments.svg" alt="" /></div>
               <div class="numbers-text">
                 <h4>1,926,436</h4>
@@ -209,7 +210,7 @@
 
     <section class="s-customers">
       <div class="container">
-        <img src="./img/s-hero.svg" alt="" />
+        <img src="./img/s-hero.svg" alt="" data-aos="fade-right"/>
         <div class="text">
           <p>
             Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
@@ -226,13 +227,13 @@
           <h4>Tim Smith</h4>
           <span>British Dragon Boat Racing Association</span>
           <ul>
-            <li><img src="img/Logo-1.svg" alt="" /></li>
-            <li><img src="img/Logo-2.svg" alt="" /></li>
-            <li><img src="img/Logo-3.svg" alt="" /></li>
-            <li><img src="img/Logo-4.svg" alt="" /></li>
-            <li><img src="img/Logo-5.svg" alt="" /></li>
-            <li><img src="img/Logo-6.svg" alt="" /></li>
-            <li><img src="img/Logo-7.svg" alt="" /></li>
+            <li><img src="img/Logo-1.svg" alt="" data-aos="flip-left"/></li>
+            <li><img src="img/Logo-2.svg" alt="" data-aos="flip-left"/></li>
+            <li><img src="img/Logo-3.svg" alt="" data-aos="flip-left"/></li>
+            <li><img src="img/Logo-4.svg" alt="" data-aos="flip-left"/></li>
+            <li><img src="img/Logo-5.svg" alt="" data-aos="flip-left"/></li>
+            <li><img src="img/Logo-6.svg" alt="" data-aos="flip-left"/></li>
+            <li><img src="img/Logo-7.svg" alt="" data-aos="flip-left"/></li>
             <a href="#"
               >Meet all customers
               <img src="img/Right.svg" alt="" />
@@ -255,14 +256,14 @@
         </div>
         <div class="cards">
           <ul>
-            <li>
+            <li data-aos="flip-left">
               <h4>Creating Streamlined Safeguarding Processes with OneRen</h4>
               <a href="#"
                 >Readmore
                 <img src="img/Right.svg" alt="" />
               </a>
             </li>
-            <li>
+            <li data-aos="flip-left">
               <h4>
                 What are your safeguarding responsibilities and how can you
                 manage them?
@@ -272,7 +273,7 @@
                 <img src="img/Right.svg" alt="" />
               </a>
             </li>
-            <li>
+            <li data-aos="flip-left">
               <h4>
                 Revamping the Membership Model with Triathlon <br />Australia
               </h4>
@@ -348,6 +349,8 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
       var swiper = new Swiper(".mySwiper", {
         pagination: {
@@ -355,6 +358,11 @@
           clickable: true,
         },
       });
+
+      AOS.init({
+      duration: 1000,
+      once: true,
+    });
     </script>
   </body>
 </html>
