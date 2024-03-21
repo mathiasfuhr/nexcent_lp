@@ -1,0 +1,23 @@
+.s-hero {
+  background: $silver;
+  padding-top: 18rem;
+  padding-bottom: 9.6rem;
+  .container{
+    @include flex(row, center, space-between);
+    .text{
+        width: 100%;
+        max-width: 65.7rem;
+        h1{
+            span{
+                display: block;
+                color: $primary;
+                margin-bottom: 1.6rem;
+            }
+        }
+        p{
+            font-size: 1.6rem;
+            margin-bottom:3.2rem ;
+        }
+    }
+  }
+}
