@@ -22,23 +22,53 @@ header {
             font-size: 1.6rem;
             line-height: 2.4rem;
             color: $black;
-            transition: color .3s;
+            transition: color 0.3s;
             &:hover {
               color: $primary;
             }
           }
         }
       }
+
+      .mobile-menu-icon {
+        display: none;
+      }
     }
-    .btns{
-        display: flex;
-        align-items: center;
-        gap: 34px;
-        a{
-            font-size: 1.4rem;
-            line-height: 2rem;
-            color: $primary;
+    .btn-mobile {
+      display: none;
+    }
+    .btns {
+      display: flex;
+      align-items: center;
+      gap: 34px;
+      a {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        color: $primary;
+      }
+    }
+  }
+
+  @include responsive(991px) {
+    .container {
+      .logo {
+        img {
+          width: 12rem;
         }
+      }
+      .btns {
+        display: none;
+      }
+    }
+  }
+  @include responsive(768px) {
+    .container {
+      nav {
+        display: none;
+      }
+      .btn-mobile {
+        display: block;
+      }
     }
   }
 }

@@ -40,6 +40,28 @@
       }
     }
   }
+  @include responsive(1070px) {
+    h1 {
+      font-size: 5rem;
+    }
+  }
+  @include responsive(991px) {
+    padding-top: 10rem;
+    .container {
+      .text {
+        h1 {
+          font-size: 4rem;
+          line-height: 4.6rem;
+        }
+      }
+    }
+    .swiper-slide {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 5rem;
+    }
+  }
 }
 
 .s-clients {
@@ -54,6 +76,7 @@
   }
   ul {
     @include flex(row, center, space-between);
+    gap: 1.8rem;
     li {
       background: rgba(76, 175, 79, 0.3);
       padding: 10px;
@@ -65,6 +88,16 @@
       }
       &:hover {
         background: $primary;
+      }
+    }
+  }
+  @include responsive(580px) {
+    ul {
+      flex-direction: column;
+      li {
+        img {
+          width: 50rem;
+        }
       }
     }
   }
@@ -108,6 +141,12 @@
       }
     }
   }
+  @include responsive(991px) {
+    ul {
+      flex-direction: column;
+      gap: 4rem;
+    }
+  }
 }
 
 .s-pixelgrade {
@@ -125,6 +164,15 @@
       p {
         margin-bottom: 3.2rem;
         width: 100%;
+      }
+    }
+  }
+  @include responsive(991px) {
+    .container {
+      flex-direction: column;
+      .text {
+        text-align: center;
+        margin-top: 4rem;
       }
     }
   }
@@ -147,14 +195,11 @@
       }
     }
     .numbers {
-      width: 100%;
-      max-width: 54rem;
       ul {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 3rem;
         li {
-          width: 25.5rem;
           display: flex;
           align-items: center;
           .icon {
@@ -167,6 +212,24 @@
             display: block;
             color: $grey;
           }
+        }
+      }
+    }
+  }
+  @include responsive(991px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+      .text {
+        margin-bottom: 4rem;
+      }
+    }
+  }
+  @include responsive(480px) {
+    .container {
+      .numbers {
+        ul {
+          grid-template-columns: 1fr;
         }
       }
     }
@@ -208,6 +271,76 @@
             margin-left: 0.8rem;
           }
         }
+      }
+    }
+  }
+  @include responsive(991px) {
+    .container {
+      flex-direction: column;
+      gap: 4rem;
+    }
+  }
+  @include responsive(480px) {
+    .container {
+      .text {
+        ul {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.s-marketing {
+  padding: 4rem 0;
+  .title {
+    h2 {
+      text-align: center;
+      margin-bottom: 0.8rem;
+    }
+    p {
+      text-align: center;
+      width: 100%;
+      max-width: 62.8rem;
+      margin: 0 auto;
+    }
+  }
+  .cards {
+    margin-top: 10rem;
+    ul {
+      @include flex(row, center, space-between);
+      li {
+        width: 100%;
+        max-width: 31.7rem;
+        padding: 1.6rem;
+        border-radius: 0.8rem;
+        box-shadow: 4px 4px 4px #e8f5e9;
+
+        h4 {
+          text-align: center;
+          margin-bottom: 2.4rem;
+        }
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: $primary;
+          font-weight: bold;
+          font-size: 1.4rem;
+          img {
+            margin-left: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+  @include responsive(991px) {
+    padding-top: 0rem;
+    .cards {
+      margin-top: 4rem;
+      ul {
+        flex-direction: column;
+        gap: 4rem;
       }
     }
   }
